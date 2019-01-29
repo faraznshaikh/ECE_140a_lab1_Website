@@ -32,6 +32,9 @@
 	display: block;
 	margin-left: auto; 
 	margin-right: auto;
+	padding: 80px;
+	transform: rotate(90deg);
+
 
   }
 .back{ 
