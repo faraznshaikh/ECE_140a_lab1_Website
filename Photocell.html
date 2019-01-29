@@ -28,31 +28,30 @@
   
     <div class=" section">
 	    <h3> Step 1 </h3>
-	    <!-- EDIT THESE THINGS like change the image and mess you can add paragraph tags  -->
-	    	<img src="img/temp.png" class="img" >
-			<p>■ Integrating passive sensors to the Raspberry Pi</p>
-			<p>■ Using Python Libraries </p>
-			<p>■ Working with the differences between digital and analog for the Raspberry Pi
-			</p>
+	    <!-- The image linked to is 20190116_123846 in the drive  -->
+	    	<img src="https://drive.google.com/open?id=1AEvmiJXdRm2Eonw6n0a8e9ZMRj3nWdoz" class="img" >
+			<p>■ To begin work with the photocell, we had to first setup the MCP3008 (as pictured)</p>
+			<p>■ We followed the instructions provided, and had the MCP setup in no time</p>
 	</div>
 
 	 <div class=" section">
 	    <h3> Step 2 </h3>
-	   <!-- EDIT THESE THINGS like change the image and mess you can add paragraph tags  -->
-	    	<img src="img/temp.png" class="img" >
-			<p>■ Integrating passive sensors to the Raspberry Pi</p>
-			<p>■ Using Python Libraries </p>
-			<p>■ Working with the differences between digital and analog for the Raspberry Pi
-			</p>
+	   <!-- The image linked is 20190116_125032 in the drive  -->
+	    	<img src="https://drive.google.com/open?id=1vBH97LTkrURY1Nl7sXBTCm0ZYB38r_o0" class="img" >
+			<p>■ With the MCP connected, we then setup the photocell's circuit.</p>
+			<p>■ Once connected, we ran some tests, and found that the values we were outputting were acceptable, the pi told us we were reading anywhere from 254 to 1023 on output </p>
+			<p>■ We measured the actual resistance with an ohmmeter to find R3 reading 9.9kOhms (as it should), and the photocell reading 1.7kOhms in ambient light and 100kOhms in darkness.</p>
+		 	<p>■ With our input values and resistor values, we were able to find Vout varying from 1.67v to 2.78v approximately.</p>
+		 <p>■ With the voltage range, the MCP will likely output from 1.67v to 2.78v.</p>
 	</div>
 
 	<div class=" section">
 	    <h3> Step 3 </h3>
-	    <!-- EDIT THESE THINGS like change the image and mess you can add paragraph tags  -->
+	    <!-- Not sure what image to place here, I don't think we have more of the photocell circuit  -->
 	    	<img src="img/temp.png" class="img" >
-			<p>■ Integrating passive sensors to the Raspberry Pi</p>
-			<p>■ Using Python Libraries </p>
-			<p>■ Working with the differences between digital and analog for the Raspberry Pi
+			<p>■ Once we actually ran simpletest.py, we were able to see that the values outputted were wrong.</p>
+			<p>■ After some investigation, we found that this was due to the input voltage of 5v being too high for the MCP. </p>
+			<p>■ To fix this, we simply switched the input voltage to 3.3V, which made our new output readings range from 1.09v to 1.83v.
 			</p>
 	</div>
 
