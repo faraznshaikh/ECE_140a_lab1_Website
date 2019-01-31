@@ -3,21 +3,21 @@
 <head>
   <link href="style.css" rel="stylesheet"/>
 </head>
-<!-- 
+<!--
 
 
 
 
 
-  If needed copy paste the part starting from section and ending with div in order to add more steps, 
+  If needed copy paste the part starting from section and ending with div in order to add more steps,
 
 
 
 
 -->
-<div class= "content"> 
+<div class= "content">
 
-  <div class="header"> DHT22 
+  <div class="header"> DHT22
 
       <div class=" back">
         <form action="index.html">
@@ -25,14 +25,23 @@
           </form>
        </div>
     </div>
-  
+
     <div class=" section">
       <h3> Step 1 </h3>
       <!-- EDIT THESE THINGS like change the image and mess you can add paragraph tags  -->
-        <img src="img/temp.png" class="img" >
+        <img src="img/DHT22_pic.jpg" class="img" >
       <p>■ Integrating passive sensors to the Raspberry Pi</p>
       <p>■ Using Python Libraries </p>
       <p>■ Working with the differences between digital and analog for the Raspberry Pi
+        <img src="img/temp.png" class="img" >
+      <p>■ Integrating the humidifier to the pi proved to be less of an issue
+        than adding the other components</p>
+      <p>■ To begin with, we had to connect the humidifier to the pi directly,
+      and we also had to use Adafruit's library in order to correctly read the
+    humidity and temperature from the device </p>
+      <p>■ After grounding and powering the DHT22, downloading the libraries,
+        and running a 10k resistor between the VCC and DATA pins on the device,
+        we were ready to begin testing!
       </p>
   </div>
 
@@ -40,25 +49,33 @@
       <h3> Step 2 </h3>
      <!-- EDIT THESE THINGS like change the image and mess you can add paragraph tags  -->
         <img src="img/temp.png" class="img" >
-      <p>■ Integrating passive sensors to the Raspberry Pi</p>
-      <p>■ Using Python Libraries </p>
-      <p>■ Working with the differences between digital and analog for the Raspberry Pi
+      <p>■ We first used the Adafruit example library to test the humidifier,
+      and it was an immediate success! The temperature and humidity readings
+    matched with our expectations, and the output was just fine.</p>
+      <p>■ Following this, the next step was to integrate the sound sensor
+      to the breadboard and to test all of our devices at once.
       </p>
   </div>
 
   <div class=" section">
-      <h3> Step 3 </h3>
+      <h3> Section Conclusion </h3>
       <!-- EDIT THESE THINGS like change the image and mess you can add paragraph tags  -->
         <img src="img/temp.png" class="img" >
-      <p>■ Integrating passive sensors to the Raspberry Pi</p>
-      <p>■ Using Python Libraries </p>
-      <p>■ Working with the differences between digital and analog for the Raspberry Pi
+      <p>Compared to the other sections of this lab, the humidifier was a nice
+      change of pace. Everything seemed very straightforward, and all mistakes
+      made were fixed right away. Overall, it was surprisingly simple to add
+    such a complicated component to the circuit. </p>
+      <p>In the grand scheme of things, the DHT22 doesn't seem like an important
+        part of this device, but it gives a good perspective on the variance
+        between different parts and their difficulties. Each part of this lab
+        has come with its own unique challenges and subtleties, but the DHT22
+        was evidence of the fact that you never know what to expect from projects.
       </p>
   </div>
 
 </div>
 
-      
-    
+
+
 
 </html>

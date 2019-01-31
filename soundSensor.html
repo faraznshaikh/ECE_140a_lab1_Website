@@ -3,17 +3,17 @@
 <head>
 	<link href="style.css" rel="stylesheet"/>
 </head>
-<!-- 
+<!--
 
 
 
-	If needed copy paste the part starting from section and ending with div in order to add more steps, 
+	If needed copy paste the part starting from section and ending with div in order to add more steps,
 
 
 -->
-<div class= "content"> 
+<div class= "content">
 
-	<div class="header"> SOUND SENSOR 
+	<div class="header"> SOUND SENSOR
 
     	<div class=" back">
 	    	<form action="index.html">
@@ -21,19 +21,19 @@
 	      	</form>
        </div>
     </div>
-  
+
     <div class=" section">
 	    <h3> Step 1 </h3>
 	    <!-- EDIT THESE THINGS like change the image and mess you can add paragraph tags  -->
 	    	<img src="img/Oscilloscope.png" class="img" >
-			<p>   > Using a breadboard, connect the MCP3008 as a substitute for the analog 
+			<p>   > Using a breadboard, connect the MCP3008 as a substitute for the analog
 				inputs (audio, envelop) to the board. </p>
-			<p>   > After you connect the sound sensor, read the different values using an 
+			<p>   > After you connect the sound sensor, read the different values using an
 				Oscilloscope. As shown on graph above: Gate(Yellow), Envelope(Green), Audio(Blue). </p>
 			<p>   > RESULTS: </p>
 			<p>  - Range of values:</p>
-			<p>	  	 Gate: High (1) when sound was detected (spoke into the sensor) or Low (0) when quiet. 
-				However, because the environment in our lab was loud, the oscilloscope graph output was noisy.</p> 
+			<p>	  	 Gate: High (1) when sound was detected (spoke into the sensor) or Low (0) when quiet.
+				However, because the environment in our lab was loud, the oscilloscope graph output was noisy.</p>
 			<p>	  	 Envelope: As we spoke louder, the envelope increased in amplitude and stabilized as it got quiet. </p>
 			<p>  Expectations: The sensor's output voltage was too high (5v) and the results were not exactly what we expected.</p>
 				<p>  The logic gate was not changing, audio was very noisy, and the envelope would not stabilize properly. </p>
@@ -47,9 +47,25 @@
 			<p>   > Do this by integrating voltage divider (using 1k and 2k resistors) with a 5V input from the sensor to output 3.3v  </p>
 			<p>   > This new output (3.3v) will fix the logic level of the sound detetor and enable it to connect to eh MCP.</p>
 			<p>    For visual reference look at schematic above. </p>
+		</div>
+
+			<div class=" section">
+			    <h3> Section Conclusion </h3>
+			    <!-- To womever writes the conc, you can talk about the data graph and getting all the data  -->
+			    	<img src="img/Data_Graph.png" class="img" >
+					<p>Write in a conc. </p>
+					<p>more conc
+					</p>
+			</div>
+
+
+			<div class=" back">
+	    	<form action="index.html">
+	       <center>  <button type="submit">Back </button> </center>
+	      	</form>
 	</div>
 
 </div>
-  
+
 
 </html>
