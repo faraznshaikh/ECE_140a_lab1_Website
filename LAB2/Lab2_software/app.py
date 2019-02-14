@@ -7,16 +7,25 @@ from pyramid.renderers import render_to_response
 
 ''' Routes '''
 def basic_route(req):
-  return FileResponse('Homepage.html')
+  return FileResponse('index.html')
 
 def view_route(req):
-  return FileResponse('dht22.html') #We make one page per sensor, so we can place both temp and humidity here
+  return FileResponse('Temperature.html') #We make one page per reading
+
+def view_route(req):
+    return FileResponse('Humidity.html')
 
 def view_route(req):
     return FileResponse('lightSensor.html')
 
 def view_route(req):
-    return FileResponse('soundSensor.html')
+    return FileResponse('Gate.html')
+
+def view_route(req):
+        return FileResponse('Envelop.html')
+
+def view_route(req):
+    return FileResponse('Audio.html')
 
 
 ''' Main Application '''
@@ -35,17 +44,26 @@ def main() :
     config.include('pyramid_jinja2')
     config.add_jinja2_renderer('.html')
 
-    config.add_route('DHT22', '/DHT22')
-    config.add_view(basic_route, route_name='DHT22')
+    config.add_route('Temperature', '/Temperature')
+    config.add_view(basic_route, route_name='Temperature')
+
+    config.add_route('Humidity', '/Humidity')
+    config.add_view(basic_route, route_name='Humidity')
 
     config.add_route('lightSensor', '/lightSensor')
     config.add_view(basic_route, route_name='lightSensor')
 
-    config.add_route('soundSensor', '/soundSensor')
-    config.add_view(basic_route, route_name='soundSensor')
+    config.add_route('Gate', '/Gate')
+    config.add_view(basic_route, route_name='Gate')
+
+    config.add_route('Envelop', '/Envelop')
+    config.add_view(basic_route, route_name='Envelop')
+
+    config.add_route('Audio', '/Audio')
+    config.add_view(basic_route, route_name='Audio')
 
     # add static folder to search path
-    config.add_static_view(name='/', path='./public', cache_max_age=3600) #Change file location
+    config.add_static_view(name='/', path='./webPages', cache_max_age=3600) #Change file location
 
     # create the webserver config
     app = config.make_wsgi_app()

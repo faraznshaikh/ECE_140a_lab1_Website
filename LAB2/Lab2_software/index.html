@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="styles.css" rel="stylesheet"/> <!--Links css sheet -->
+    <meta charset="utf-8">
+    <title>ECE140a LAb Dashboard</title>
+
+    <meta name="description" content="ECE140a Lab Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+    <!-- Insert your standard HTML here -->
+
+    <script type="text/javascript" src="my_script.js"></script> <!--Connects javascript file, need to change path and file name -->
+
+    <div class="grid-container">
+
+      <div class="header">
+        <h1> <center> Lab 1 </center></h1>
+
+
+        <div class="names1">
+          <ul class="names" style="list-style-type:disc;">
+          <li>Group name: MFIT</li>
+          <li>Members: Faraz Noor Shaikh, Michael Schnabel, Travis Beebe, Ulises Orozco </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class= "content">
+
+
+    <h2> Current Sensor Readings </h2>
+
+
+      <!--Displays the temperature readings, I'm trying to update tags at first
+      <p id=temp> Current Temperature:
+      </p>
+
+      <!--Displays the humidity readings -->
+      <p id=humidity> Current Humidity:
+      </p>
+
+      <!--Displays the light readings -->
+      <p id=light> Current Light Level:
+      </p>
+
+      <!--Displays the gate readings -->
+      <p id=gate> Current gate Level:
+      </p>
+
+      <!--Displays the envelop readings -->
+      <p id=envelop> Current envelop Level:
+      </p>
+
+      <!--Displays the sound readings -->
+      <p id=audio> Current Sound Level:
+      </p>
+
+
+
+      <div class="steps ">
+        <p> The following are the webpages with Google Charts information on readings </p>
+
+        <form action="Audio.html">
+           <button type="submit">Audio Readings Chart </button>
+        </form>
+
+        <form action="Envelop.html">
+           <button type="submit"> Envelop Readings Chart </button>
+        </form>
+
+        <form action="Gate.html">
+           <button type="submit">Gate Readings Chart </button>
+        </form>
+
+        <form action="Humidity.html">
+           <button type="submit">Humidity Readings Chart </button>
+        </form>
+
+        <form action="lightSensor.html">
+           <button type="submit">Light Sensor Readings Chart </button>
+        </form>
+
+        <form action="Temperature.html">
+           <button type="submit"> Temperature Readings Chart </button>
+        </form>
+
+      </div>
+
+
+
+      <h3> Description </h3>
+
+      <p>
+      The lab objectives for this session were:
+      </p>
+        <p>■ Integrating use of firebase within the Rasbperry Pi</p>
+        <p>■ Updating a webpage with readings for each sensor attached to the PI </p>
+        <p>■ Creating live charts for the last 60 readings of the Pi's sensors
+      </p>
+
+      </p>
+
+
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <!-- Google Charts API -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Firebase API -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
+
+  </body>
+
+</html>
