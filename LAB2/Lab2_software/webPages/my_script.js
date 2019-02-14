@@ -2,6 +2,20 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
 
   // ============================================================================
+  
+  //ID Tag stuff for website updates
+  function showUpdates(data) {
+	//given the jsondata, add data to list, then
+    //list='';
+    //iterate the given jsondata (json array), and build your list...
+    temp.innerHTML=data[1].title; //show the list on the page in the todos element
+    humidity.innerHTML=data[2].title;
+    light.innerHTML=data[3].title;
+    gate.innerHTML=data[4].title;
+    envelop.innerHTML=data[5].title;
+    audio.innerHTML=data[4].title;
+  }
+  
   // Firebase Config Initialization
   firebase.initializeApp({
     apiKey: "",
