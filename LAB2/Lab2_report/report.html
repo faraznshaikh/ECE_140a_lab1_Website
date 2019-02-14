@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Julius+Sans+One|Lemonada|Yellowtail" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="container-fluid pcontainer">
+      <ul>
+       <h2 class = "teaminfo">Michael Schanbel (A12892279)<br>
+Faraz Shahik (A13080655)<br>
+Travis Beebe (A12933576)<br>
+Isrrael Orozco (A13164081)<br>
+        ECE 140A<br> </h2>
+      <h1 class="header">LAB 2 | Interfacing with the Web</h1>
+       <h3 class ="introduction">Introduction:<br>
+	In this lab we connected our Raspberry Pi to the internet and enabled it send live data from our sensors to a database. Create a dashboard that displays all the sensor data in a running chart in a user friendly web app. One can start by connecting the Pi to the database, send sensor information to the database, and lastly create an online dashboard to display all the data. 
+ </h3>
+      <li class="steps"> Step 1: Firebase Realtime Database<br>
+- This NoSQL database is constantly looking for new sensor readings from a RPi.<br>
+- Instal Python library called pyrebase that takes care of the communication between python and Firebase.<br>
+- Create a write_to_pyrebase Python function that takes one parameter per sensor (temperature, humidity, light, gate, envelope, audio) and pushes those reading to Firebase everytime it runs. </li>
+     
+       <p2> <img class="header-image"  src="http://i63.tinypic.com/9qijau.jpg" alt="Image and video hosting by TinyPic"></p2>
+      
+      <li class="steps"> Step 2: Cron <br> 
+- Is the Linux timing- utility tool that schedules tasks and will be used to run the python script.<br> 
+- It is imperative to use absolute paths, because crontab works best with absolute paths. <br>
+- Create a main.py file that reads data from the sensors and passes them to the write_to_pyrebase python function. <br>
+        - Using cron, schedule the main.py script to run once for a minute for every minute. </li>
+       
+        <p2><img class="header-image" src="http://i64.tinypic.com/6ibehe.jpg" alt="Image and video hosting by TinyPic"></p2>
+         <li class="steps"> 
+Step 3: WebApp and Firebase <br>
+- Design a Pyramid web app that enables the user to see the live sensor data in action. <br>
+- Create the app that is able to interact with Firebase.<br>
+- Use the Google charts API to plot and visualize the data obtained from firebase.<br>
+- Write a Javascript file that takes care of the live-updates for the graphs. <br>
+ </li>
+        
+        <p4><img class="header-image" src="http://i64.tinypic.com/2mx4s1z.jpg" alt="Image and video hosting by TinyPic"></p4>
+  </body>
+  </html>
+    
+    

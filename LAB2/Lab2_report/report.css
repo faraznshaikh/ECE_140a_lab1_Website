@@ -1,0 +1,62 @@
+
+
+body {
+    background-color: rgb(42, 94, 60);
+  }
+  
+  .pcontainer {
+    background-color: rgb(236, 240, 241); 
+    margin: 30px auto 30px auto;
+    padding-bottom:50px;
+    width:90%;
+  }
+  
+  .header {
+    font-family: 'Titillium Web';
+    color: rgb(29, 29, 29);
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+  }
+  
+  .header-image {
+    width:65%;
+    display:block;
+    margin: 20px auto 0px auto;
+    border:solid;
+  }
+  
+  .info {
+    text-align:center;
+  }
+  
+  .bibliography {
+    font-family: 'Titillium Web';
+    text-align:center;
+    font-weight: bold;
+    font-size:36px;
+  }
+  
+  .heading {
+    font-weight: bold;
+    font-size:18px;
+    list-style-type:none;
+    padding-top:10px;
+  }
+  
+  .item {
+    padding-top:3px;
+    font-size:12px;
+    margin-left:35px;
+  }
+  
+.teaminfo {
+  font-weight: bold;
+    font-size:18px;
+    list-style-type:none;
+    padding-top:10px;
+}
+
+
+
+
