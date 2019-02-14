@@ -37,9 +37,25 @@
 	margin-left: auto; 
 	margin-right: auto;
 	padding: 80px;
+  }
+
+  .img1{ 
+	
+	display: block;
+	margin-left: auto; 
+	margin-right: auto;
+	padding: 80px;
 	transform: rotate(90deg);
+  }
 
-
+  .img3{ 
+	width: 600px;
+	height:450px;
+	display: block;
+	margin-left: auto; 
+	margin-right: auto;
+	padding: 80px;
+	transform: rotate(90deg);
   }
 .back{ 
 	text-align: left;
